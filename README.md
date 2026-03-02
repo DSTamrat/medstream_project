@@ -1,10 +1,10 @@
-#### <p align="center">
+#### **<p align="center">**
 
-#### &nbsp; <img src="https://via.placeholder.com/1200x250.png?text=MedStream:+Clinical+Risk+NLP+%26+Analytics+Dashboard" alt="MedStream Banner"/>
+####   **<img src="https://via.placeholder.com/1200x250/0A2540/FFFFFF?text=MedStream%20-%20Clinical%20Risk%20NLP%20%26%20Analytics%20Dashboard" alt="MedStream Banner"/>**
 
-#### </p>
+#### **</p>**
 
-#### &nbsp;           
+#### &nbsp;    
 
 * #### MedStream: Clinical Risk NLP \& Healthcare Analytics Dashboard
 
