@@ -1,0 +1,6 @@
+note_id,encounter_id,patient_id,note_text,label
+N001,E001,P001,"Patient with poorly controlled diabetes, elevated HbA1c, needs medication adjustment and diet counseling.",high_risk
+N002,E002,P002,"Mild hypertension, lifestyle modification advised, no acute distress.",low_risk
+N003,E003,P003,"CHF exacerbation, shortness of breath, edema, requires close follow-up and medication optimization.",high_risk
+N004,E004,P004,"Asthma well controlled, routine follow-up, no recent exacerbations.",low_risk
+N005,E005,P005,"Chronic kidney disease stage 3, stable labs, monitor renal function regularly.",medium_risk

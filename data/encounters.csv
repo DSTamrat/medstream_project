@@ -1,0 +1,6 @@
+encounter_id,patient_id,encounter_date,encounter_type,los_days,readmitted_30d
+E001,P001,2025-01-10,Inpatient,4,Yes
+E002,P002,2025-01-12,ED,1,No
+E003,P003,2025-01-15,Inpatient,7,Yes
+E004,P004,2025-01-18,Outpatient,0,No
+E005,P005,2025-01-20,Inpatient,5,No

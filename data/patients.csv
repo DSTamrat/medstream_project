@@ -1,0 +1,6 @@
+patient_id,age,gender,primary_condition
+P001,56,F,Type 2 Diabetes
+P002,43,M,Hypertension
+P003,70,F,CHF
+P004,35,M,Asthma
+P005,62,F,CKD
