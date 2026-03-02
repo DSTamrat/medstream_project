@@ -1,6 +1,401 @@
-patient_id,age,gender,primary_condition
-P001,56,F,Type 2 Diabetes
-P002,43,M,Hypertension
-P003,70,F,CHF
-P004,35,M,Asthma
-P005,62,F,CKD
+patient_id,age,gender,primary_condition_code,primary_condition,comorbidities
+P0001,39,M,I25.10,Coronary artery disease,"CKD, Atrial fibrillation"
+P0002,42,M,I25.10,Coronary artery disease,
+P0003,79,M,I50.9,Heart failure,
+P0004,52,M,N18.3,CKD stage 3,
+P0005,50,F,E11.9,Type 2 diabetes,"CAD, Hypertension, Depression"
+P0006,45,F,I10,Hypertension,"Obesity, CKD"
+P0007,68,M,I50.9,Heart failure,"Hyperlipidemia, COPD, Depression"
+P0008,69,F,J44.9,COPD,
+P0009,83,M,J45.909,Asthma,
+P0010,62,F,N18.3,CKD stage 3,Hyperlipidemia
+P0011,30,M,J44.9,COPD,"Hyperlipidemia, CKD"
+P0012,37,F,I10,Hypertension,"COPD, Obesity, Anxiety"
+P0013,70,M,I25.10,Coronary artery disease,"Hyperlipidemia, Obesity"
+P0014,56,M,J45.909,Asthma,"CAD, CKD, COPD"
+P0015,66,M,E11.9,Type 2 diabetes,
+P0016,65,F,I10,Hypertension,
+P0017,52,F,E11.9,Type 2 diabetes,"Depression, Anxiety, Hyperlipidemia"
+P0018,58,M,E11.9,Type 2 diabetes,"Depression, Atrial fibrillation"
+P0019,71,M,E11.9,Type 2 diabetes,"Hyperlipidemia, Hypertension, Depression"
+P0020,39,M,I25.10,Coronary artery disease,Depression
+P0021,33,F,J45.909,Asthma,"Atrial fibrillation, CAD, Anxiety"
+P0022,26,M,I25.10,Coronary artery disease,"COPD, Hyperlipidemia"
+P0023,62,F,E11.9,Type 2 diabetes,"Hypertension, CAD, Anxiety"
+P0024,47,M,J44.9,COPD,"Atrial fibrillation, CKD"
+P0025,44,F,J44.9,COPD,Atrial fibrillation
+P0026,25,F,J45.909,Asthma,
+P0027,39,F,J44.9,COPD,"CKD, Hypertension"
+P0028,55,M,I50.9,Heart failure,"Hyperlipidemia, Obesity, Atrial fibrillation"
+P0029,85,M,I10,Hypertension,"CKD, Atrial fibrillation, COPD"
+P0030,64,F,I25.10,Coronary artery disease,"Anxiety, Atrial fibrillation"
+P0031,40,M,E11.9,Type 2 diabetes,
+P0032,68,M,N18.3,CKD stage 3,CKD
+P0033,25,M,I25.10,Coronary artery disease,
+P0034,54,M,I50.9,Heart failure,"Hyperlipidemia, CKD"
+P0035,60,F,E11.9,Type 2 diabetes,Anxiety
+P0036,56,F,J44.9,COPD,"CKD, Hyperlipidemia, Hypertension"
+P0037,80,F,J45.909,Asthma,"Anxiety, Hypertension, COPD"
+P0038,37,M,J45.909,Asthma,"Hyperlipidemia, CKD"
+P0039,49,M,N18.3,CKD stage 3,"Obesity, Depression, Hyperlipidemia"
+P0040,60,F,E11.9,Type 2 diabetes,
+P0041,81,M,I50.9,Heart failure,
+P0042,36,M,E11.9,Type 2 diabetes,"Anxiety, Atrial fibrillation, Hyperlipidemia"
+P0043,76,M,E11.9,Type 2 diabetes,"Hypertension, Depression, Obesity"
+P0044,83,F,J45.909,Asthma,"Obesity, CKD, Atrial fibrillation"
+P0045,52,M,N18.3,CKD stage 3,
+P0046,65,M,I50.9,Heart failure,"Atrial fibrillation, Obesity, Hypertension"
+P0047,90,M,J44.9,COPD,Hyperlipidemia
+P0048,33,M,J45.909,Asthma,
+P0049,56,M,N18.3,CKD stage 3,
+P0050,78,F,I10,Hypertension,COPD
+P0051,55,F,J45.909,Asthma,CAD
+P0052,83,F,J44.9,COPD,
+P0053,26,F,N18.3,CKD stage 3,
+P0054,34,M,N18.3,CKD stage 3,"Obesity, COPD"
+P0055,33,M,I10,Hypertension,"Obesity, Anxiety"
+P0056,63,M,I25.10,Coronary artery disease,"Hyperlipidemia, Obesity"
+P0057,58,M,I50.9,Heart failure,CAD
+P0058,61,M,I25.10,Coronary artery disease,"CKD, CAD"
+P0059,89,F,I10,Hypertension,
+P0060,36,F,J44.9,COPD,"Hypertension, Atrial fibrillation"
+P0061,67,M,I25.10,Coronary artery disease,"Obesity, Anxiety"
+P0062,79,M,I50.9,Heart failure,
+P0063,44,M,J44.9,COPD,"Atrial fibrillation, Obesity"
+P0064,80,M,I50.9,Heart failure,"COPD, Hypertension"
+P0065,70,M,I25.10,Coronary artery disease,Hyperlipidemia
+P0066,70,F,N18.3,CKD stage 3,CKD
+P0067,45,M,J45.909,Asthma,
+P0068,47,F,J44.9,COPD,"CKD, CAD, Hyperlipidemia"
+P0069,38,F,J44.9,COPD,
+P0070,85,M,E11.9,Type 2 diabetes,"COPD, CAD, Depression"
+P0071,54,M,I50.9,Heart failure,Depression
+P0072,67,F,J44.9,COPD,
+P0073,60,F,I25.10,Coronary artery disease,"Atrial fibrillation, COPD, Hypertension"
+P0074,39,F,E11.9,Type 2 diabetes,"Hypertension, Hyperlipidemia"
+P0075,80,F,I25.10,Coronary artery disease,"Depression, Hyperlipidemia"
+P0076,74,M,I10,Hypertension,
+P0077,80,M,N18.3,CKD stage 3,COPD
+P0078,80,M,I25.10,Coronary artery disease,"COPD, Hyperlipidemia"
+P0079,63,F,I25.10,Coronary artery disease,"COPD, Depression, Atrial fibrillation"
+P0080,62,M,E11.9,Type 2 diabetes,"Depression, Obesity, CAD"
+P0081,63,F,N18.3,CKD stage 3,
+P0082,63,F,E11.9,Type 2 diabetes,"COPD, Anxiety, CKD"
+P0083,81,M,N18.3,CKD stage 3,"Obesity, Hyperlipidemia, Atrial fibrillation"
+P0084,90,F,I50.9,Heart failure,CAD
+P0085,53,M,E11.9,Type 2 diabetes,
+P0086,30,M,J45.909,Asthma,
+P0087,83,F,I25.10,Coronary artery disease,Depression
+P0088,88,F,E11.9,Type 2 diabetes,Hypertension
+P0089,38,F,E11.9,Type 2 diabetes,Atrial fibrillation
+P0090,84,M,N18.3,CKD stage 3,Hyperlipidemia
+P0091,83,M,J44.9,COPD,"Atrial fibrillation, COPD, Depression"
+P0092,81,F,J44.9,COPD,"Obesity, Anxiety, CKD"
+P0093,58,M,J44.9,COPD,"Atrial fibrillation, Anxiety"
+P0094,55,F,J45.909,Asthma,
+P0095,61,M,I10,Hypertension,"COPD, Hyperlipidemia"
+P0096,42,M,E11.9,Type 2 diabetes,"Obesity, CKD, Hypertension"
+P0097,78,F,I10,Hypertension,"Depression, Hypertension, Hyperlipidemia"
+P0098,78,F,J44.9,COPD,
+P0099,73,F,I50.9,Heart failure,"CAD, Depression"
+P0100,78,M,J45.909,Asthma,CAD
+P0101,80,F,I50.9,Heart failure,"COPD, Depression, Atrial fibrillation"
+P0102,46,F,E11.9,Type 2 diabetes,
+P0103,75,M,I50.9,Heart failure,"Obesity, Anxiety, Hyperlipidemia"
+P0104,31,F,J45.909,Asthma,"CKD, Anxiety"
+P0105,66,F,J44.9,COPD,"CAD, Depression, Obesity"
+P0106,35,F,I50.9,Heart failure,
+P0107,69,M,I25.10,Coronary artery disease,
+P0108,30,M,E11.9,Type 2 diabetes,Hypertension
+P0109,44,M,E11.9,Type 2 diabetes,"Hyperlipidemia, CKD, Anxiety"
+P0110,57,F,E11.9,Type 2 diabetes,
+P0111,45,F,I50.9,Heart failure,
+P0112,64,F,J45.909,Asthma,Hyperlipidemia
+P0113,56,M,I25.10,Coronary artery disease,"Hyperlipidemia, Hypertension"
+P0114,69,F,I25.10,Coronary artery disease,"Hyperlipidemia, COPD"
+P0115,26,F,J44.9,COPD,"Hyperlipidemia, Depression, Obesity"
+P0116,83,M,J45.909,Asthma,Atrial fibrillation
+P0117,59,F,J45.909,Asthma,"CAD, COPD, Depression"
+P0118,56,M,I10,Hypertension,"CKD, Anxiety, CAD"
+P0119,73,F,I50.9,Heart failure,"COPD, Obesity, CKD"
+P0120,52,F,J44.9,COPD,"COPD, CAD"
+P0121,60,M,N18.3,CKD stage 3,Hyperlipidemia
+P0122,55,F,J45.909,Asthma,Anxiety
+P0123,87,F,J44.9,COPD,
+P0124,36,F,E11.9,Type 2 diabetes,"CKD, CAD, COPD"
+P0125,72,F,N18.3,CKD stage 3,"Depression, COPD"
+P0126,70,F,I10,Hypertension,"CAD, CKD"
+P0127,40,M,I10,Hypertension,
+P0128,48,M,E11.9,Type 2 diabetes,"CAD, Atrial fibrillation, Hypertension"
+P0129,49,F,E11.9,Type 2 diabetes,"Obesity, CAD"
+P0130,26,M,I10,Hypertension,
+P0131,31,F,I25.10,Coronary artery disease,Anxiety
+P0132,38,M,N18.3,CKD stage 3,"Anxiety, Atrial fibrillation"
+P0133,81,F,E11.9,Type 2 diabetes,
+P0134,57,F,I50.9,Heart failure,
+P0135,76,F,I50.9,Heart failure,
+P0136,44,M,J44.9,COPD,"Hyperlipidemia, CKD"
+P0137,40,F,N18.3,CKD stage 3,Atrial fibrillation
+P0138,73,F,J45.909,Asthma,"Depression, CAD"
+P0139,32,M,J44.9,COPD,CKD
+P0140,58,M,E11.9,Type 2 diabetes,Obesity
+P0141,34,M,I50.9,Heart failure,"Anxiety, Atrial fibrillation, Obesity"
+P0142,29,M,I10,Hypertension,"Anxiety, Hyperlipidemia"
+P0143,54,F,J44.9,COPD,Depression
+P0144,39,M,I25.10,Coronary artery disease,CAD
+P0145,43,M,I50.9,Heart failure,CAD
+P0146,61,F,I50.9,Heart failure,"CAD, Depression, Obesity"
+P0147,89,F,J45.909,Asthma,
+P0148,30,F,I25.10,Coronary artery disease,"CAD, Hypertension"
+P0149,36,M,I25.10,Coronary artery disease,
+P0150,59,M,J44.9,COPD,Anxiety
+P0151,81,F,E11.9,Type 2 diabetes,"Anxiety, Hyperlipidemia, CKD"
+P0152,69,F,I10,Hypertension,"Hyperlipidemia, Obesity"
+P0153,67,F,I25.10,Coronary artery disease,"CAD, Depression, Anxiety"
+P0154,29,F,I50.9,Heart failure,"CAD, COPD"
+P0155,39,F,J44.9,COPD,
+P0156,84,F,I50.9,Heart failure,Atrial fibrillation
+P0157,71,F,I25.10,Coronary artery disease,"Hypertension, CKD, Obesity"
+P0158,41,F,J45.909,Asthma,"Hyperlipidemia, Hypertension, COPD"
+P0159,55,M,I10,Hypertension,
+P0160,77,M,E11.9,Type 2 diabetes,
+P0161,84,M,I25.10,Coronary artery disease,Anxiety
+P0162,62,F,J45.909,Asthma,"Anxiety, CKD, Atrial fibrillation"
+P0163,43,F,E11.9,Type 2 diabetes,Hyperlipidemia
+P0164,60,F,I10,Hypertension,"Hypertension, CAD"
+P0165,63,F,J44.9,COPD,Anxiety
+P0166,86,F,I10,Hypertension,"Anxiety, COPD, Depression"
+P0167,49,M,N18.3,CKD stage 3,"CKD, Depression, Hypertension"
+P0168,65,F,I25.10,Coronary artery disease,"Depression, Obesity, CKD"
+P0169,29,M,N18.3,CKD stage 3,"Hyperlipidemia, Anxiety"
+P0170,37,F,I50.9,Heart failure,Depression
+P0171,44,M,J45.909,Asthma,"COPD, Depression"
+P0172,35,F,J44.9,COPD,"COPD, Anxiety, Depression"
+P0173,29,M,E11.9,Type 2 diabetes,"CKD, Hyperlipidemia"
+P0174,80,M,J44.9,COPD,
+P0175,81,M,I25.10,Coronary artery disease,"Hypertension, Atrial fibrillation"
+P0176,66,M,I10,Hypertension,"COPD, Depression"
+P0177,43,M,N18.3,CKD stage 3,"Obesity, Atrial fibrillation, Hyperlipidemia"
+P0178,35,F,N18.3,CKD stage 3,Anxiety
+P0179,43,M,J45.909,Asthma,"Anxiety, CAD"
+P0180,26,F,I10,Hypertension,Hyperlipidemia
+P0181,81,F,N18.3,CKD stage 3,"Depression, CAD"
+P0182,83,F,E11.9,Type 2 diabetes,"Anxiety, Hyperlipidemia, Atrial fibrillation"
+P0183,73,F,N18.3,CKD stage 3,"CAD, Hypertension"
+P0184,75,F,I50.9,Heart failure,
+P0185,88,F,J44.9,COPD,COPD
+P0186,53,M,N18.3,CKD stage 3,"Obesity, Hyperlipidemia"
+P0187,30,F,J44.9,COPD,"Hypertension, COPD, Anxiety"
+P0188,41,M,I10,Hypertension,"Depression, Obesity"
+P0189,50,M,J44.9,COPD,"Atrial fibrillation, CAD"
+P0190,46,F,J44.9,COPD,"CAD, COPD, Depression"
+P0191,39,F,I50.9,Heart failure,CKD
+P0192,75,F,I50.9,Heart failure,"Hypertension, CAD, Anxiety"
+P0193,40,F,I10,Hypertension,"Depression, COPD"
+P0194,38,M,J45.909,Asthma,
+P0195,66,M,I25.10,Coronary artery disease,
+P0196,84,F,I25.10,Coronary artery disease,"Hyperlipidemia, Obesity, Hypertension"
+P0197,29,F,J45.909,Asthma,
+P0198,37,M,N18.3,CKD stage 3,Depression
+P0199,83,F,I25.10,Coronary artery disease,"Obesity, Depression, COPD"
+P0200,37,F,N18.3,CKD stage 3,"CAD, Hypertension, COPD"
+P0201,72,M,J45.909,Asthma,"CKD, COPD, Hypertension"
+P0202,72,F,I50.9,Heart failure,"CAD, CKD, Hypertension"
+P0203,83,M,I25.10,Coronary artery disease,Hypertension
+P0204,31,F,E11.9,Type 2 diabetes,CKD
+P0205,33,M,N18.3,CKD stage 3,CKD
+P0206,67,M,J44.9,COPD,
+P0207,60,M,E11.9,Type 2 diabetes,"Obesity, Hyperlipidemia"
+P0208,28,M,I50.9,Heart failure,"CKD, COPD"
+P0209,27,M,I10,Hypertension,
+P0210,41,F,N18.3,CKD stage 3,
+P0211,33,F,J45.909,Asthma,"Atrial fibrillation, Hyperlipidemia"
+P0212,82,M,N18.3,CKD stage 3,
+P0213,63,F,I25.10,Coronary artery disease,
+P0214,32,F,J44.9,COPD,"Depression, Hyperlipidemia, CKD"
+P0215,81,M,I50.9,Heart failure,"Obesity, Hyperlipidemia"
+P0216,41,F,N18.3,CKD stage 3,"Depression, CAD"
+P0217,83,F,I50.9,Heart failure,
+P0218,52,F,J45.909,Asthma,Depression
+P0219,68,F,J45.909,Asthma,"Hyperlipidemia, COPD, CKD"
+P0220,65,F,I10,Hypertension,Anxiety
+P0221,33,M,J44.9,COPD,
+P0222,36,F,I50.9,Heart failure,"Obesity, Hypertension"
+P0223,67,M,J45.909,Asthma,"Depression, Hypertension"
+P0224,61,F,I10,Hypertension,
+P0225,89,M,E11.9,Type 2 diabetes,"CKD, Hyperlipidemia, Obesity"
+P0226,72,M,J44.9,COPD,"CKD, Depression"
+P0227,28,F,I50.9,Heart failure,CAD
+P0228,64,F,I10,Hypertension,
+P0229,48,M,N18.3,CKD stage 3,"Hyperlipidemia, Obesity, COPD"
+P0230,28,M,I25.10,Coronary artery disease,Depression
+P0231,78,F,I10,Hypertension,COPD
+P0232,64,F,J44.9,COPD,
+P0233,31,M,E11.9,Type 2 diabetes,
+P0234,35,F,J45.909,Asthma,"Anxiety, Atrial fibrillation, CKD"
+P0235,59,M,J44.9,COPD,
+P0236,69,F,I50.9,Heart failure,"Anxiety, CAD"
+P0237,30,M,J45.909,Asthma,
+P0238,25,M,I10,Hypertension,Obesity
+P0239,57,F,I10,Hypertension,
+P0240,25,F,I25.10,Coronary artery disease,"Obesity, Atrial fibrillation, CKD"
+P0241,54,F,I50.9,Heart failure,"Hypertension, Depression, Atrial fibrillation"
+P0242,83,M,J44.9,COPD,"Depression, Atrial fibrillation"
+P0243,78,F,I50.9,Heart failure,"Hypertension, COPD, Hyperlipidemia"
+P0244,83,F,I50.9,Heart failure,"Hyperlipidemia, CKD, Anxiety"
+P0245,76,M,J45.909,Asthma,"COPD, CKD"
+P0246,67,M,I50.9,Heart failure,
+P0247,90,M,J44.9,COPD,"COPD, Obesity"
+P0248,55,M,E11.9,Type 2 diabetes,"CKD, Obesity"
+P0249,44,M,E11.9,Type 2 diabetes,"Anxiety, Atrial fibrillation, COPD"
+P0250,66,F,E11.9,Type 2 diabetes,"Hyperlipidemia, Anxiety, CKD"
+P0251,63,F,N18.3,CKD stage 3,
+P0252,70,M,I10,Hypertension,"Anxiety, Hypertension, Atrial fibrillation"
+P0253,72,F,I50.9,Heart failure,
+P0254,89,F,J45.909,Asthma,
+P0255,82,M,I10,Hypertension,"Atrial fibrillation, Obesity, Hypertension"
+P0256,82,M,J44.9,COPD,"Hyperlipidemia, Obesity"
+P0257,30,M,I25.10,Coronary artery disease,"Anxiety, Obesity, Atrial fibrillation"
+P0258,72,F,J45.909,Asthma,"COPD, Hypertension, Depression"
+P0259,67,M,I10,Hypertension,
+P0260,74,F,I10,Hypertension,COPD
+P0261,35,M,I10,Hypertension,"Depression, Obesity"
+P0262,35,F,N18.3,CKD stage 3,"COPD, Obesity, Atrial fibrillation"
+P0263,36,F,N18.3,CKD stage 3,"Hypertension, COPD"
+P0264,64,M,E11.9,Type 2 diabetes,"Anxiety, CKD"
+P0265,53,M,E11.9,Type 2 diabetes,
+P0266,62,M,N18.3,CKD stage 3,
+P0267,68,M,N18.3,CKD stage 3,"Obesity, Atrial fibrillation, Hyperlipidemia"
+P0268,46,F,I50.9,Heart failure,"COPD, CKD, Anxiety"
+P0269,61,F,E11.9,Type 2 diabetes,CAD
+P0270,85,M,I10,Hypertension,"Anxiety, CAD, Depression"
+P0271,73,F,E11.9,Type 2 diabetes,Obesity
+P0272,57,M,I25.10,Coronary artery disease,"COPD, Hyperlipidemia, Atrial fibrillation"
+P0273,40,F,I50.9,Heart failure,CAD
+P0274,82,M,J44.9,COPD,"Hyperlipidemia, CKD, Depression"
+P0275,82,F,I50.9,Heart failure,"Hypertension, Depression, CAD"
+P0276,72,M,J45.909,Asthma,
+P0277,72,M,I50.9,Heart failure,"Hyperlipidemia, COPD"
+P0278,43,M,I50.9,Heart failure,"Anxiety, Obesity"
+P0279,85,F,N18.3,CKD stage 3,
+P0280,35,M,I10,Hypertension,Obesity
+P0281,79,M,J44.9,COPD,"CKD, CAD"
+P0282,40,M,E11.9,Type 2 diabetes,"Anxiety, Hyperlipidemia, Hypertension"
+P0283,88,M,I25.10,Coronary artery disease,Obesity
+P0284,62,F,I50.9,Heart failure,"CKD, Depression"
+P0285,48,M,N18.3,CKD stage 3,"Hyperlipidemia, Hypertension"
+P0286,74,F,I50.9,Heart failure,"COPD, CAD, Atrial fibrillation"
+P0287,27,F,J44.9,COPD,
+P0288,69,M,I25.10,Coronary artery disease,
+P0289,67,M,I50.9,Heart failure,"Atrial fibrillation, COPD"
+P0290,47,F,I25.10,Coronary artery disease,"Obesity, Atrial fibrillation, Hypertension"
+P0291,83,M,I10,Hypertension,Hypertension
+P0292,50,M,I10,Hypertension,"Atrial fibrillation, Depression"
+P0293,85,F,I50.9,Heart failure,CAD
+P0294,70,M,J44.9,COPD,"CAD, Hyperlipidemia"
+P0295,72,F,J45.909,Asthma,"Depression, COPD, Hyperlipidemia"
+P0296,88,F,I10,Hypertension,"Hyperlipidemia, Depression"
+P0297,35,F,N18.3,CKD stage 3,Atrial fibrillation
+P0298,62,F,I50.9,Heart failure,
+P0299,66,F,I10,Hypertension,"Depression, Obesity, COPD"
+P0300,81,F,J45.909,Asthma,
+P0301,70,F,I10,Hypertension,
+P0302,34,F,I10,Hypertension,Hypertension
+P0303,43,F,I50.9,Heart failure,Hyperlipidemia
+P0304,55,F,I10,Hypertension,"Hypertension, Obesity, COPD"
+P0305,82,F,I10,Hypertension,"Hyperlipidemia, Obesity, CAD"
+P0306,71,F,I10,Hypertension,"CKD, Hyperlipidemia"
+P0307,28,M,J45.909,Asthma,"Atrial fibrillation, Hyperlipidemia, Obesity"
+P0308,58,F,E11.9,Type 2 diabetes,"Anxiety, CKD"
+P0309,40,M,J44.9,COPD,
+P0310,82,M,I25.10,Coronary artery disease,"Hyperlipidemia, COPD, Anxiety"
+P0311,69,M,N18.3,CKD stage 3,"CAD, Obesity"
+P0312,47,F,N18.3,CKD stage 3,Hyperlipidemia
+P0313,50,M,E11.9,Type 2 diabetes,"Hypertension, COPD, CAD"
+P0314,72,F,J44.9,COPD,Hyperlipidemia
+P0315,33,F,J45.909,Asthma,"Atrial fibrillation, Depression, Anxiety"
+P0316,77,M,E11.9,Type 2 diabetes,"Hyperlipidemia, Anxiety"
+P0317,84,F,E11.9,Type 2 diabetes,Obesity
+P0318,80,M,J44.9,COPD,
+P0319,44,F,E11.9,Type 2 diabetes,COPD
+P0320,53,F,N18.3,CKD stage 3,"Hyperlipidemia, CAD"
+P0321,50,F,E11.9,Type 2 diabetes,"Atrial fibrillation, Hyperlipidemia"
+P0322,89,M,N18.3,CKD stage 3,Obesity
+P0323,68,M,J44.9,COPD,
+P0324,35,M,I25.10,Coronary artery disease,"CKD, Depression"
+P0325,28,F,I25.10,Coronary artery disease,"CAD, Anxiety"
+P0326,56,F,I10,Hypertension,"Hyperlipidemia, Hypertension, Atrial fibrillation"
+P0327,81,F,J45.909,Asthma,"CKD, COPD, CAD"
+P0328,43,F,J44.9,COPD,"COPD, Depression"
+P0329,41,F,N18.3,CKD stage 3,
+P0330,65,M,J45.909,Asthma,
+P0331,59,F,E11.9,Type 2 diabetes,Hyperlipidemia
+P0332,31,F,J45.909,Asthma,"CKD, Obesity, Depression"
+P0333,66,F,E11.9,Type 2 diabetes,Anxiety
+P0334,90,F,J45.909,Asthma,"Anxiety, Hypertension"
+P0335,36,F,N18.3,CKD stage 3,"CKD, Atrial fibrillation, CAD"
+P0336,70,M,I50.9,Heart failure,"Anxiety, Atrial fibrillation"
+P0337,61,M,J44.9,COPD,
+P0338,80,M,I10,Hypertension,"Depression, COPD"
+P0339,30,F,I50.9,Heart failure,COPD
+P0340,61,M,J45.909,Asthma,"Atrial fibrillation, CAD, Depression"
+P0341,40,M,I50.9,Heart failure,"COPD, Atrial fibrillation, CAD"
+P0342,71,M,E11.9,Type 2 diabetes,"Atrial fibrillation, Hypertension, Anxiety"
+P0343,29,M,I25.10,Coronary artery disease,"Anxiety, Atrial fibrillation"
+P0344,44,M,I10,Hypertension,"Obesity, Depression"
+P0345,63,F,N18.3,CKD stage 3,"CAD, Anxiety, Depression"
+P0346,27,F,I10,Hypertension,
+P0347,78,F,J44.9,COPD,
+P0348,85,F,I25.10,Coronary artery disease,Hypertension
+P0349,86,M,N18.3,CKD stage 3,"Obesity, CKD, Hypertension"
+P0350,39,M,I50.9,Heart failure,"COPD, Depression, Hyperlipidemia"
+P0351,77,M,J45.909,Asthma,"Hypertension, Obesity, CAD"
+P0352,51,F,I25.10,Coronary artery disease,"Atrial fibrillation, Depression, Obesity"
+P0353,47,F,N18.3,CKD stage 3,"Atrial fibrillation, COPD"
+P0354,58,F,E11.9,Type 2 diabetes,CAD
+P0355,63,M,I10,Hypertension,"CKD, Anxiety"
+P0356,65,F,I10,Hypertension,"CAD, Hyperlipidemia"
+P0357,73,F,J44.9,COPD,"Obesity, CAD"
+P0358,30,F,I25.10,Coronary artery disease,
+P0359,69,F,I25.10,Coronary artery disease,"Anxiety, CKD"
+P0360,50,F,N18.3,CKD stage 3,"Obesity, Hyperlipidemia"
+P0361,55,M,I50.9,Heart failure,CKD
+P0362,31,M,J45.909,Asthma,"Anxiety, Hyperlipidemia"
+P0363,42,M,N18.3,CKD stage 3,Depression
+P0364,85,F,I25.10,Coronary artery disease,CAD
+P0365,66,F,I25.10,Coronary artery disease,
+P0366,36,M,N18.3,CKD stage 3,
+P0367,47,F,J44.9,COPD,Hypertension
+P0368,75,F,E11.9,Type 2 diabetes,"Hypertension, Atrial fibrillation"
+P0369,63,M,I10,Hypertension,"Anxiety, Atrial fibrillation"
+P0370,42,F,I10,Hypertension,Hyperlipidemia
+P0371,67,M,I25.10,Coronary artery disease,"CAD, Obesity, Hypertension"
+P0372,68,F,N18.3,CKD stage 3,Obesity
+P0373,76,F,N18.3,CKD stage 3,"Hyperlipidemia, Depression"
+P0374,37,M,E11.9,Type 2 diabetes,"COPD, CKD, Hypertension"
+P0375,58,F,E11.9,Type 2 diabetes,"CAD, COPD, Obesity"
+P0376,26,F,I25.10,Coronary artery disease,"CKD, Hypertension"
+P0377,40,F,I10,Hypertension,Depression
+P0378,89,F,I25.10,Coronary artery disease,
+P0379,62,F,N18.3,CKD stage 3,CKD
+P0380,42,F,E11.9,Type 2 diabetes,"COPD, Depression, Atrial fibrillation"
+P0381,85,M,J44.9,COPD,Hyperlipidemia
+P0382,82,F,I50.9,Heart failure,
+P0383,32,M,N18.3,CKD stage 3,Obesity
+P0384,66,F,I50.9,Heart failure,Anxiety
+P0385,36,F,J44.9,COPD,
+P0386,83,M,N18.3,CKD stage 3,"Anxiety, Hypertension, CAD"
+P0387,84,F,I25.10,Coronary artery disease,
+P0388,75,F,J44.9,COPD,
+P0389,52,M,I50.9,Heart failure,"COPD, Hyperlipidemia, CAD"
+P0390,32,M,J45.909,Asthma,
+P0391,61,F,E11.9,Type 2 diabetes,Depression
+P0392,72,F,J45.909,Asthma,"Depression, Hyperlipidemia, COPD"
+P0393,42,F,I50.9,Heart failure,Atrial fibrillation
+P0394,75,M,I25.10,Coronary artery disease,Hypertension
+P0395,27,F,J45.909,Asthma,"Atrial fibrillation, Depression, Anxiety"
+P0396,54,M,J45.909,Asthma,"Obesity, CAD"
+P0397,49,M,I50.9,Heart failure,"Hypertension, CKD, Hyperlipidemia"
+P0398,33,M,N18.3,CKD stage 3,
+P0399,82,M,E11.9,Type 2 diabetes,
+P0400,76,F,E11.9,Type 2 diabetes,Hypertension

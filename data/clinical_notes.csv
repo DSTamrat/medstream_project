@@ -1,6 +1,51 @@
 note_id,encounter_id,patient_id,note_text,label
-N001,E001,P001,"Patient with poorly controlled diabetes, elevated HbA1c, needs medication adjustment and diet counseling.",high_risk
-N002,E002,P002,"Mild hypertension, lifestyle modification advised, no acute distress.",low_risk
-N003,E003,P003,"CHF exacerbation, shortness of breath, edema, requires close follow-up and medication optimization.",high_risk
-N004,E004,P004,"Asthma well controlled, routine follow-up, no recent exacerbations.",low_risk
-N005,E005,P005,"Chronic kidney disease stage 3, stable labs, monitor renal function regularly.",medium_risk
+N0001,E00522,P0298,"Chronic Heart failure, currently stable but with recent dizziness. Recommend close follow-up and medication adjustment.",medium_risk
+N0002,E00738,P0370,"Hypertension with acute deterioration. chest pain, dizziness, and poor response to home medications.",high_risk
+N0003,E00741,P0173,"Chronic Type 2 diabetes, currently stable but with recent cough. Recommend close follow-up and medication adjustment.",medium_risk
+N0004,E00661,P0036,"Stable COPD. Patient denies leg swelling. Medications tolerated, no recent exacerbations.",low_risk
+N0005,E00412,P0396,"Asthma with moderate symptoms including shortness of breath. No acute distress, but risk of worsening without adherence.",medium_risk
+N0006,E00679,P0037,"Stable Asthma. Patient denies shortness of breath. Medications tolerated, no recent exacerbations.",low_risk
+N0007,E00627,P0253,"Follow-up for Heart failure. No acute complaints, exam unremarkable.",low_risk
+N0008,E00514,P0142,"Severe exacerbation of Hypertension. headache noted, with cough. Close monitoring and possible ICU transfer.",high_risk
+N0009,E00860,P0108,"Ongoing management of Type 2 diabetes. cough present, labs borderline. Follow-up scheduled.",medium_risk
+N0010,E00137,P0111,"Severe exacerbation of Heart failure. palpitations noted, with chest pain. Close monitoring and possible ICU transfer.",high_risk
+N0011,E00812,P0006,"Ongoing management of Hypertension. leg swelling present, labs borderline. Follow-up scheduled.",medium_risk
+N0012,E00077,P0083,"Stable CKD stage 3. Patient denies headache. Medications tolerated, no recent exacerbations.",low_risk
+N0013,E00637,P0292,"Hypertension with moderate symptoms including dizziness. No acute distress, but risk of worsening without adherence.",medium_risk
+N0014,E00974,P0164,"Patient with worsening Hypertension, presenting with fatigue and palpitations. High concern for decompensation, requires urgent management.",high_risk
+N0015,E00939,P0237,"Stable Asthma. Patient denies dizziness. Medications tolerated, no recent exacerbations.",low_risk
+N0016,E00900,P0039,"Severe exacerbation of CKD stage 3. leg swelling noted, with cough. Close monitoring and possible ICU transfer.",high_risk
+N0017,E00281,P0069,"COPD well controlled. No headache, no palpitations. Routine follow-up visit.",low_risk
+N0018,E00884,P0087,"Patient with worsening Coronary artery disease, presenting with chest pain and headache. High concern for decompensation, requires urgent management.",high_risk
+N0019,E00762,P0086,"Severe exacerbation of Asthma. cough noted, with headache. Close monitoring and possible ICU transfer.",high_risk
+N0020,E00320,P0170,"Heart failure with moderate symptoms including leg swelling. No acute distress, but risk of worsening without adherence.",medium_risk
+N0021,E00550,P0323,"COPD with moderate symptoms including leg swelling. No acute distress, but risk of worsening without adherence.",medium_risk
+N0022,E00175,P0389,"Follow-up for Heart failure. No acute complaints, exam unremarkable.",low_risk
+N0023,E00372,P0102,"Ongoing management of Type 2 diabetes. chest pain present, labs borderline. Follow-up scheduled.",medium_risk
+N0024,E00528,P0316,"Follow-up for Type 2 diabetes. No acute complaints, exam unremarkable.",low_risk
+N0025,E00211,P0239,"Ongoing management of Hypertension. wheezing present, labs borderline. Follow-up scheduled.",medium_risk
+N0026,E00236,P0161,"Severe exacerbation of Coronary artery disease. fatigue noted, with leg swelling. Close monitoring and possible ICU transfer.",high_risk
+N0027,E00102,P0394,"Stable Coronary artery disease. Patient denies wheezing. Medications tolerated, no recent exacerbations.",low_risk
+N0028,E00987,P0332,"Asthma with moderate symptoms including fatigue. No acute distress, but risk of worsening without adherence.",medium_risk
+N0029,E00903,P0363,"Patient with worsening CKD stage 3, presenting with cough and fatigue. High concern for decompensation, requires urgent management.",high_risk
+N0030,E00948,P0336,"Heart failure well controlled. No chest pain, no headache. Routine follow-up visit.",low_risk
+N0031,E00347,P0136,"Ongoing management of COPD. headache present, labs borderline. Follow-up scheduled.",medium_risk
+N0032,E00140,P0330,"Patient with worsening Asthma, presenting with chest pain and headache. High concern for decompensation, requires urgent management.",high_risk
+N0033,E00622,P0165,"COPD well controlled. No dizziness, no wheezing. Routine follow-up visit.",low_risk
+N0034,E00500,P0215,"Severe exacerbation of Heart failure. chest pain noted, with wheezing. Close monitoring and possible ICU transfer.",high_risk
+N0035,E00371,P0087,"Coronary artery disease well controlled. No headache, no shortness of breath. Routine follow-up visit.",low_risk
+N0036,E00199,P0143,"Follow-up for COPD. No acute complaints, exam unremarkable.",low_risk
+N0037,E00688,P0095,"Ongoing management of Hypertension. shortness of breath present, labs borderline. Follow-up scheduled.",medium_risk
+N0038,E00585,P0272,"Coronary artery disease with acute deterioration. leg swelling, headache, and poor response to home medications.",high_risk
+N0039,E00902,P0176,"Follow-up for Hypertension. No acute complaints, exam unremarkable.",low_risk
+N0040,E00060,P0012,"Hypertension well controlled. No headache, no fatigue. Routine follow-up visit.",low_risk
+N0041,E00329,P0035,"Ongoing management of Type 2 diabetes. cough present, labs borderline. Follow-up scheduled.",medium_risk
+N0042,E00097,P0026,"Asthma with acute deterioration. dizziness, wheezing, and poor response to home medications.",high_risk
+N0043,E00313,P0210,"CKD stage 3 with acute deterioration. cough, chest pain, and poor response to home medications.",high_risk
+N0044,E00975,P0098,"Chronic COPD, currently stable but with recent shortness of breath. Recommend close follow-up and medication adjustment.",medium_risk
+N0045,E00300,P0233,"Type 2 diabetes with moderate symptoms including dizziness. No acute distress, but risk of worsening without adherence.",medium_risk
+N0046,E00278,P0386,"Chronic CKD stage 3, currently stable but with recent palpitations. Recommend close follow-up and medication adjustment.",medium_risk
+N0047,E00925,P0352,"Patient with worsening Coronary artery disease, presenting with palpitations and cough. High concern for decompensation, requires urgent management.",high_risk
+N0048,E00602,P0090,"CKD stage 3 well controlled. No dizziness, no shortness of breath. Routine follow-up visit.",low_risk
+N0049,E00440,P0016,"Hypertension with acute deterioration. wheezing, palpitations, and poor response to home medications.",high_risk
+N0050,E00838,P0233,"Severe exacerbation of Type 2 diabetes. cough noted, with wheezing. Close monitoring and possible ICU transfer.",high_risk
